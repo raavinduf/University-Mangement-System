@@ -23,7 +23,7 @@ public class StudentSignIn {
         return this.Password;
     }
 
-    public void CheckDatabase(){
+    public boolean CheckDatabase(){
         try(
                 Connection conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/UMS","root","root");
 
@@ -38,25 +38,21 @@ public class StudentSignIn {
                 int age=rset.getInt("Age");
                 String password=rset.getString("Password");
                 if(password.equals(this.getPassword())){
-                    System.out.println("Name : "+Name+"\nAge :"+age);
-                    System.out.println("Registered Course");
-                    String sqlQuery1="Select Course_name from stdcourse where Student_no=\""+this.getStudent_no()+"\";";
-                    ResultSet rset1=stmt.executeQuery(sqlQuery1);
-                    while(rset1.next()){
-                        String Course=rset1.getString("Course_name");
-                        System.out.println(Course);
+                    return true;
                     }
 
-                }
                 else
-                    System.out.println("invalid Student_no,Password combination");
+                    return false;
+                }
+
             }
 
-
-        }
         catch(SQLException e){
             System.out.println(e);
         }
+        return false;
+
+        }
 
     }
-}
+

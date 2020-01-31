@@ -8,9 +8,7 @@ public class Student extends com.ums.Course {
     private String Password;
 
     public Student(){
-        super();
-        this.Name=null;
-        this.age=0;
+
     }
 
     public Student(String name,int age,String [] Course,int n,String Student_no,String Password){
@@ -25,6 +23,25 @@ public class Student extends com.ums.Course {
             this.age=0;
         if (Student_no!=null)
             this.Student_no=Student_no;
+        else
+            this.Student_no="";
+        if (Password!=null)
+            this.Password=Password;
+        else
+            this.Password="";
+    }
+
+    public Student(String name,int age,String Std_no,String Password){
+        if(name!=null)
+            this.Name=name;
+        else
+            this.Name="";
+        if (age>0)
+            this.age=age;
+        else
+            this.age=0;
+        if (Std_no!=null)
+            this.Student_no=Std_no;
         else
             this.Student_no="";
         if (Password!=null)
@@ -61,7 +78,7 @@ public class Student extends com.ums.Course {
         System.out.println("Age :"+this.getAge());
         System.out.println("Registered courses\n"+this.getCourse());
     }
-    public void insertStudent(){
+    public boolean insertStudent(){
         try (
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/UMS",
@@ -71,25 +88,23 @@ public class Student extends com.ums.Course {
                 Statement stmt = conn.createStatement();
         ){
             //int countUpdated;
-            String crs=super.getCourse();
-            String [] crs1=crs.split("\n");
+            //String crs=super.getCourse();
+            //String [] crs1=crs.split("\n");
 
             String sqlInsert = "insert into student values (\""+ this.getName()+"\",\"" + this.getAge()+"\",\"" + this.getStudent_no()+"\",\""+ this.getPassword()+"\");";
-            System.out.println(sqlInsert);
-            System.out.println(sqlInsert);
+            //System.out.println(sqlInsert);
+            //System.out.println(sqlInsert);
             stmt.executeUpdate(sqlInsert);
-            for (int i=0;i<crs1.length;i++){
-                String sqlInsert2 ="insert into stdcourse values (\""+crs1[i]+"\",\""+this.getStudent_no()+"\");";
-                stmt.executeUpdate(sqlInsert2);
-                System.out.println(sqlInsert2);
-            }
 
+            return true;
         }
 
 
         catch (SQLException e){
             System.out.println(e);
+            return false;
         }
+
 
 
     }

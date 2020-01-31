@@ -44,7 +44,7 @@
           <text value="Student"/>
         </properties>
       </component>
-      <component id="707e4" class="javax.swing.JLabel" binding="std_namelbl">
+      <component id="707e4" class="javax.swing.JLabel" binding="stdNameLbl">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -60,7 +60,7 @@
           <text value="Student no"/>
         </properties>
       </component>
-      <component id="e3d39" class="javax.swing.JLabel" binding="std_nolbl">
+      <component id="e3d39" class="javax.swing.JLabel" binding="stdNoLbl">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

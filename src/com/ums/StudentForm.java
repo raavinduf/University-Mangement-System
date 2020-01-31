@@ -4,38 +4,58 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class StudentForm {
+public class StudentForm extends JFrame{
     private JLabel SignIn;
     private JTextField stdNo;
     private JLabel Student_No;
-    private String Password;
     private JLabel SignUp;
-    private JTextField textField2;
     private JLabel Student_no1;
-    private JPasswordField passwordField2;
-    private JPasswordField passwordField3;
     private JLabel Password_01;
-    private JLabel RePassword_01;
     private JButton SignInbtn;
     private JButton SignUpBtn;
     private JLabel Head;
     private JPanel stdform;
     private JTextField stdAgeText;
-    private JLabel stdAge;
 
     private String Student_name;
     private String Student_no;
     private int age;
     private String stdPasswordVar;
     private JTextField stdPassword;
+    private JLabel stdName;
+    private JTextField stdNameTxt;
+    private JLabel StdAge;
+    private JTextField ageInt;
+    private JLabel StdPassword;
+    private JTextField stdNoTxt;
+    private JTextField stdPasswordTxt;
 
-    public StudentForm() {
+    //StudentSignIn SSi=new StudentSignIn();
+
+    public StudentForm()  {
         SignInbtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Student_no=stdNo.getText();
-                age=Integer.parseInt(stdAgeText.getText());
-                stdPasswordVar=stdPassword.getText();
+                StudentSignIn SSi=new StudentSignIn(stdNo.getText(),stdPassword.getText());
+                if(SSi.CheckDatabase()){
+                    JOptionPane.showMessageDialog(null,"Success");
+                   StudentProfile Sp1=new StudentProfile();
+                   Sp1.setVisible(true);
+
+                }
+                else
+                    JOptionPane.showMessageDialog(null,"Incorrect Password or Student no");
+            }
+        });
+        SignUpBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Student s1=new Student(stdNameTxt.getText(),Integer.parseInt(ageInt.getText()),stdNoTxt.getText(),stdPasswordTxt.getText());
+                if(s1.insertStudent())
+                    JOptionPane.showMessageDialog(null,"Success");
+                else
+                    JOptionPane.showMessageDialog(null,"Failed to sign in");
+
             }
         });
     }

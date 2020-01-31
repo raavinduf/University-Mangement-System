@@ -32,6 +32,25 @@ public class Lecturer extends com.ums.Course {
             this.Username = Username;
     }
 
+    public Lecturer(String Name, int age, String Username, String Password) {
+        if (Name != null)
+            this.Name = Name;
+        else
+            this.Name = "";
+        if (age > 0)
+            this.age = age;
+        else
+            this.age = 0;
+        if (Username != null)
+            this.Username = Username;
+        else
+            this.Username = "";
+        if (Password != null)
+            this.Password = Password;
+        else
+            this.Username = Username;
+    }
+
     public void setName(String Name) {
         this.Name = Name;
     }
@@ -63,7 +82,7 @@ public class Lecturer extends com.ums.Course {
         System.out.println("Registered course details :\n" + this.getCourse());
     }
 
-    public void insertLecturer() {
+    public boolean insertLecturer() {
         try (
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/UMS",
@@ -73,23 +92,19 @@ public class Lecturer extends com.ums.Course {
                 Statement stmt = conn.createStatement();
         ){
             //int countUpdated;
-            String crs=super.getCourse();
-            String [] crs1=crs.split("\n");
+           // String crs=super.getCourse();
 
             String sqlInsert = "insert into Lecturer values (\""+ this.getName()+"\",\"" + this.getAge()+"\",\"" + this.getUsername()+"\",\""+ this.getPassword()+"\");";
-            System.out.println(sqlInsert);
-            System.out.println(sqlInsert);
+            //System.out.println(sqlInsert);
+            //System.out.println(sqlInsert);
             stmt.executeUpdate(sqlInsert);
-            for (int i=0;i<crs1.length;i++){
-                String sqlInsert2 ="insert into courses values (\""+crs1[i]+"\",\""+this.getUsername()+"\");";
-                stmt.executeUpdate(sqlInsert2);
-                System.out.println(sqlInsert2);
-            }
+            return true;
 
 
 
         } catch(SQLException e) {
             System.out.println(e);
+            return false;
         }
     }
 }

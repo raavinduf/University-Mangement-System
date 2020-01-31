@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06385a47-8f18-4d0d-9a54-eed3011c277e" name="Default Changelist" comment="" />
+    <list default="true" id="06385a47-8f18-4d0d-9a54-eed3011c277e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/ums/Front.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ums/Front.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerSignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerSignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentForm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentSignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentSignIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/Lecturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerSignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentProfile.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentProfile.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentSignIn.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +35,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1X7OmPWFoHnEmPsj242RyBRSBbu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="179" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="227" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="226" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql connector/mysql-connector-java-8.0.18.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -36,7 +60,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StudentProfile">
+  <component name="RunManager" selected="Application.LecturerForm">
+    <configuration name="Front" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ums.Front" />
+      <module name="ums-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ums.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LecturerForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ums.LecturerForm" />
       <module name="ums-01" />
@@ -91,9 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentProfile" />
         <item itemvalue="Application.LecturerForm" />
         <item itemvalue="Application.StudentForm" />
+        <item itemvalue="Application.Front" />
+        <item itemvalue="Application.StudentProfile" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -110,5 +148,16 @@
       <updated>1580393824577</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
