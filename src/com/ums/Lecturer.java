@@ -91,12 +91,9 @@ public class Lecturer extends com.ums.Course {
 
                 Statement stmt = conn.createStatement();
         ){
-            //int countUpdated;
-           // String crs=super.getCourse();
 
             String sqlInsert = "insert into Lecturer values (\""+ this.getName()+"\",\"" + this.getAge()+"\",\"" + this.getUsername()+"\",\""+ this.getPassword()+"\");";
-            //System.out.println(sqlInsert);
-            //System.out.println(sqlInsert);
+
             stmt.executeUpdate(sqlInsert);
             return true;
 
@@ -105,6 +102,37 @@ public class Lecturer extends com.ums.Course {
         } catch(SQLException e) {
             System.out.println(e);
             return false;
+        }
+    }
+
+    public void insertLecturer1() {
+        try (
+                Connection conn = DriverManager.getConnection(
+                        "jdbc:mysql://localhost:3306/UMS",
+                        "root", "root");
+
+
+                Statement stmt = conn.createStatement();
+        ){
+            //int countUpdated;
+             String crs=super.getCourse();
+            String [] crs1=crs.split("\n");
+
+            String sqlInsert = "insert into Lecturer values (\""+ this.getName()+"\",\"" + this.getAge()+"\",\"" + this.getUsername()+"\",\""+ this.getPassword()+"\");";
+            //System.out.println(sqlInsert);
+            //System.out.println(sqlInsert);
+            stmt.executeUpdate(sqlInsert);
+            for (int i=0;i<crs1.length;i++){
+                String sqlnsert1="insert into stdcourse values(\""+crs1[i]+"\",\""+this.getUsername()+"\");";
+                stmt.executeUpdate(sqlnsert1);
+            }
+
+
+
+
+        } catch(SQLException e) {
+            System.out.println(e);
+
         }
     }
 }

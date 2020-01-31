@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06385a47-8f18-4d0d-9a54-eed3011c277e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ums/Front.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ums/Front.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerSignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/LecturerSignIn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentForm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentProfile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentSignIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ums-01/com/ums/StudentSignIn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ums/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ums/LecturerSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/LecturerSignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ums/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ums/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ums/StudentProfile.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentProfile.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ums/StudentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ums/StudentSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ums/StudentSignIn.java" afterDir="false" />
     </list>
@@ -60,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LecturerForm">
+  <component name="RunManager" selected="Application.StudentForm">
     <configuration name="Front" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ums.Front" />
       <module name="ums-01" />
@@ -128,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LecturerForm" />
         <item itemvalue="Application.StudentForm" />
+        <item itemvalue="Application.LecturerForm" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Front" />
         <item itemvalue="Application.StudentProfile" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

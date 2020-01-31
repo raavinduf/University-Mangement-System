@@ -9,6 +9,7 @@ public class Main {
         Scanner input2=new Scanner(System.in);
         Scanner input3=new Scanner(System.in);
         Scanner input4=new Scanner(System.in);
+        Scanner input5=new Scanner(System.in);
         Student s1 = new Student();
         Lecturer l1 =new Lecturer();
         StudentSignIn Ss1=new StudentSignIn();
@@ -35,18 +36,18 @@ public class Main {
                     case 1:
                         System.out.println("...\nStudent Registration\nPlease submit the following information");
                         System.out.println("Name :");
-                        name=input3.nextLine();
+                        name=input5.nextLine();
                         System.out.println("Age :");
                         age=input.nextInt();
                         System.out.println("Student number :");
-                        Username=input2.nextLine();
+                        Username=input5.nextLine();
                         System.out.println("Password :");
-                        Password=input2.nextLine();
+                        Password=input5.nextLine();
                         System.out.println("Select the course number from the following list");
                         System.out.println("[1] SENG 11111 - Introducttion to Programming");
                         System.out.println("[2] SENG 11112 - Fundamentals of Engineering");
                         System.out.println(("[3] SENG 11113 - Data Structures and Algorithms"));
-                        courseNo=input2.nextLine();
+                        courseNo=input5.nextLine();
                         num = courseNo.split(",");
                         int n=num.length;
                         String [] crs=new String[n];
@@ -63,7 +64,7 @@ public class Main {
                         }
 
                         s1=new Student(name,age,crs,n,Username,Password);
-                        s1.insertStudent();
+                        s1.insertStudent1();
                         break;
                     case 2:
                         System.out.println("...\nLecture Registration \nPlease submit the following information");
@@ -101,7 +102,7 @@ public class Main {
                             //System.out.println(num[i]);
                         }
                         l1=new Lecturer(name,age,crs2,n1,Username,Password);
-                        l1.insertLecturer();
+                        l1.insertLecturer1();
 
                         break;
                     default:
@@ -124,8 +125,8 @@ public class Main {
                         System.out.println("Password :");
                         Password=input3.nextLine();
                         Ss1=new StudentSignIn(Student_no,Password);
-                        System.out.println("Hello");
-                        Ss1.CheckDatabase();
+                       // System.out.println("Hello");
+                        Ss1.CheckDatabase1();
                         break;
                     case 2:
                         System.out.println("Lecturer login form");
@@ -134,7 +135,7 @@ public class Main {
                         System.out.println("Password");
                         Password=input4.nextLine();
                         Ls1=new LecturerSignIn(Lecturer_no,Password);
-                        Ls1.CheckDatabase();
+                        Ls1.CheckDatabase1();
 
                 }
                 break;
